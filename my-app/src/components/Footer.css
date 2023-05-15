@@ -1,0 +1,50 @@
+.footer__main {
+    box-sizing: border-box;
+
+position: relative;
+width: 1280px;
+height: 58px;
+
+background: #FFFFFF;
+border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.footer__letter1 {
+    position: absolute;
+    left: 42.66%;
+    right: 42.73%;
+    top: 50%;
+    bottom: 18.97%;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 88.02%;
+    /* or 11px */
+    display: flex;
+    align-items: center;
+    
+    color: #888888;
+    
+}
+
+.footer__letter2{
+position: absolute;
+left: 44.14%;
+right: 44.14%;
+top: 18.97%;
+bottom: 50%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 88.02%;
+/* or 11px */
+display: flex;
+align-items: center;
+
+color: #888888;
+}
