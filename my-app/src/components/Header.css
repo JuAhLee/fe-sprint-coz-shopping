@@ -9,8 +9,8 @@ box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* 쇼핑몰 이름 */
-.logoLette{
-position: absolute;
+.logo_Text{
+position:  relative;  /* 상대적 */
 left: 11.17%;
 right: 70.86%;
 top: 31.48%;
@@ -31,7 +31,7 @@ color: #000000;
 
 /* 햄버거 버튼 */
 .HamButton{
-position: absolute;
+position:  relative;  /* 상대적 */
 width: 34px;
 height: 24px;
 left: 1170px;
@@ -41,7 +41,7 @@ top: 28px;
 
 /* 아이콘 */
 .icon{
-position: absolute;
+position:  relative;  /* 상대적 */;
 left: 5.88%;
 right: 5.88%;
 top: 8.33%;
@@ -52,7 +52,7 @@ border: 3px solid #000000;
 
 /* 로고 */
 .logo{
-position: absolute;
+position:  relative;  /* 상대적 */
 left: 5.94%;
 right: 89.77%;
 top: 31.25%;
