@@ -8,10 +8,10 @@ import ProductIcon from '../img/producticon.png';
 
 export default function Header() {
    
-    const [drop, dropping] = useState(false);
+    const [drop, isDropping] = useState(false);
 
     const clickDropHandler = () => {
-        drop ? dropping(false) : dropping(true)
+        drop ? isDropping(false) : isDropping(true)
     }  // 클릭시 드롭, 안드롭
 
     const dropDownCom = () =>
@@ -20,11 +20,11 @@ export default function Header() {
             <div>
                 <li> OOO님, 안녕하세요! </li>
                 <Link to = "/product/list" >
-                    <img src = {ProductIcon} alt = "productIcon" ></img>
+                    <img className = "icon" src = {ProductIcon} alt = "productIcon" ></img>
                     상품 페이지 리스트 
                 </Link>
                 <Link to = "/bookmark">
-                    <img src = {BookmarkIcon} alt = "bookmarkIcon"></img>
+                    <img className = "icon" src = {BookmarkIcon} alt = "bookmarkIcon"></img>
                     북마크 페이지 리스트
                 </Link>
             </div>
@@ -44,8 +44,8 @@ export default function Header() {
                     <div className = "logoLetter">COZ Shopping</div>
                 </Link>
             </div>
-            <img src={HamButton} alt="Menu" onClick={clickDropHandler} />
-            { dropping && <dropDownCom />}
+            <img className = "HamButton" src={HamButton} alt="Menu" onClick={clickDropHandler} />
+            { isDropping && <dropDownCom />}
         </div>
         
     )
