@@ -1,17 +1,19 @@
 .footer__main {
     box-sizing: border-box;
+    /*display: flex;*/
+    
 
-position: relative;
-width: 1280px;
-height: 58px;
+    position: absolute;
+    width: 1280px;
+    height: 58px;
 
-background: #FFFFFF;
-border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 
 }
 
-.footer__letter1 {
-    position: absolute;
+.privacy-policy {
+    position: absolute;  /* 상대적 */
     left: 42.66%;
     right: 42.73%;
     top: 50%;
@@ -30,8 +32,9 @@ border-top: 1px solid rgba(0, 0, 0, 0.1);
     
 }
 
-.footer__letter2{
-position: absolute;
+.copyright{
+    flex-direction : column;
+position:  relative;  /* 상대적 */
 left: 44.14%;
 right: 44.14%;
 top: 18.97%;
